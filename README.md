@@ -1,0 +1,7 @@
+## doctypes
+
+escuelas
+
+#### License
+
+MIT
