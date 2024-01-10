@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nombre",
+ "creation": "2024-01-06 23:16:59.610382",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "connections",
+  "nombre",
+  "carrera",
+  "semestre",
+  "column_break_kvhek",
+  "profesor",
+  "profesor_name",
+  "credito"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "unique": 1
+  },
+  {
+   "fieldname": "carrera",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Carrera",
+   "options": "Carreras"
+  },
+  {
+   "fieldname": "semestre",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Semestre",
+   "options": "Semestre"
+  },
+  {
+   "fieldname": "profesor",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Profesor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "credito",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Creditos",
+   "options": "Creditos"
+  },
+  {
+   "fieldname": "column_break_kvhek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "profesor.employee_name",
+   "fieldname": "profesor_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Profesor"
+  },
+  {
+   "fieldname": "connections",
+   "fieldtype": "Tab Break",
+   "label": "Connections"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-08 18:23:21.988979",
+ "modified_by": "Administrator",
+ "module": "code_marina",
+ "name": "Materias",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

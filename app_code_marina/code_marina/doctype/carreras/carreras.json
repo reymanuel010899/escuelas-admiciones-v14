@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nombre",
+ "creation": "2024-01-05 00:33:36.042850",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "pensum",
+  "materia"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "unique": 1
+  },
+  {
+   "fieldname": "pensum",
+   "fieldtype": "Data",
+   "label": "Pensum",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "materia",
+   "fieldtype": "Data",
+   "label": "materia"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-06 22:07:44.797641",
+ "modified_by": "Administrator",
+ "module": "code_marina",
+ "name": "Carreras",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

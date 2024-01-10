@@ -1,0 +1,13 @@
+{
+ "creation": "2024-01-08 18:47:01.423876",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2024-01-08 18:47:01.423876",
+ "modified_by": "Administrator",
+ "module": "code_marina",
+ "name": "Escuelas",
+ "owner": "Administrator",
+ "source_name": "Escuelas",
+ "timeseries": 1
+}

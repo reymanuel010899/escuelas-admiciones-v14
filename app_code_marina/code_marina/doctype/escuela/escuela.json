@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nombre",
+ "creation": "2024-01-05 00:42:18.028383",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "director",
+  "section_break_87tvf",
+  "estudiante_name",
+  "section_break_lxgql",
+  "profesores_name",
+  "section_break_5zenm",
+  "carreras_name",
+  "descripcion",
+  "portada"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "unique": 1
+  },
+  {
+   "fieldname": "director",
+   "fieldtype": "Link",
+   "label": "Director",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_87tvf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "estudiante_name",
+   "fieldtype": "Table",
+   "label": "Estudiantes Item",
+   "options": "Estudiante Item"
+  },
+  {
+   "fieldname": "section_break_lxgql",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "profesores_name",
+   "fieldtype": "Table",
+   "label": "Profesores Item",
+   "options": "Profesor Item"
+  },
+  {
+   "fieldname": "section_break_5zenm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "carreras_name",
+   "fieldtype": "Table",
+   "label": "Carreras Item",
+   "options": "Carreras Item"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "label": "Descripcion"
+  },
+  {
+   "fieldname": "portada",
+   "fieldtype": "Attach Image",
+   "label": "Portada"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-07 01:13:58.357928",
+ "modified_by": "Administrator",
+ "module": "code_marina",
+ "name": "Escuela",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

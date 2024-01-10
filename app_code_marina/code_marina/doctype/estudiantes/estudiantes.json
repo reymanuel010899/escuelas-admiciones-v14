@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nombre",
+ "creation": "2024-01-05 00:34:39.319663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "apellido",
+  "fecha",
+  "old_ascenso",
+  "estado",
+  "rango",
+  "column_break_b0evg",
+  "gmail",
+  "institucion",
+  "celular",
+  "escuela",
+  "cedula_o_pasaporte",
+  "column_break_gpgqh",
+  "telefono",
+  "fecha_ingreso",
+  "matricula",
+  "password",
+  "direcion",
+  "column_break_9wt9n",
+  "nacionalidad",
+  "tipo_sambre",
+  "carrera",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "unique": 1
+  },
+  {
+   "fieldname": "apellido",
+   "fieldtype": "Data",
+   "label": "Apellido"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha Nacimiento"
+  },
+  {
+   "fieldname": "column_break_b0evg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "escuela",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Escuela",
+   "options": "Escuela",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gmail",
+   "fieldtype": "Data",
+   "label": "Gmail",
+   "options": "Email"
+  },
+  {
+   "fieldname": "celular",
+   "fieldtype": "Data",
+   "label": "Celular",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_break_gpgqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Telefono",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "matricula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Matricula",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "column_break_9wt9n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "carrera",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Carrera",
+   "options": "Carreras",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rango",
+   "fieldtype": "Data",
+   "label": "Rango"
+  },
+  {
+   "fieldname": "institucion",
+   "fieldtype": "Data",
+   "label": "Institucion"
+  },
+  {
+   "fieldname": "fecha_ingreso",
+   "fieldtype": "Date",
+   "label": "Fecha Ingreso"
+  },
+  {
+   "fieldname": "nacionalidad",
+   "fieldtype": "Select",
+   "label": "Nacionalidad",
+   "options": "\nRepublica Dominicana\nPuerto Rico\nHaiti\nVenezuela\nColombia"
+  },
+  {
+   "fieldname": "tipo_sambre",
+   "fieldtype": "Select",
+   "label": "Tipo Sambre",
+   "options": "\nA positivo (A+)\nA negativo (A-)\nB positivo (B+)\nB negativo (B-)\nAB positivo (AB+)\nAB negativo (AB-)\nO positivo (O+)\nO negativo (O-)"
+  },
+  {
+   "fieldname": "direcion",
+   "fieldtype": "Data",
+   "label": "Direcion"
+  },
+  {
+   "fieldname": "old_ascenso",
+   "fieldtype": "Date",
+   "label": "Ultimo Ascenso"
+  },
+  {
+   "fieldname": "cedula_o_pasaporte",
+   "fieldtype": "Data",
+   "label": "Cedula o Pasaporte"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "\ncasado\nsoltero"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-07 16:46:02.604909",
+ "modified_by": "Administrator",
+ "module": "code_marina",
+ "name": "Estudiantes",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
