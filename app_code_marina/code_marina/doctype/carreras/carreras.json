@@ -10,7 +10,9 @@
  "field_order": [
   "nombre",
   "pensum",
-  "materia"
+  "column_break_3bosg",
+  "materia",
+  "escuela"
  ],
  "fields": [
   {
@@ -29,11 +31,21 @@
    "fieldname": "materia",
    "fieldtype": "Data",
    "label": "materia"
+  },
+  {
+   "fieldname": "escuela",
+   "fieldtype": "Link",
+   "label": "Escuela",
+   "options": "Escuela"
+  },
+  {
+   "fieldname": "column_break_3bosg",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-06 22:07:44.797641",
+ "modified": "2024-01-10 14:06:01.472323",
  "modified_by": "Administrator",
  "module": "code_marina",
  "name": "Carreras",

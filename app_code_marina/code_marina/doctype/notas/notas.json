@@ -36,6 +36,7 @@
   {
    "fieldname": "nota_virtual",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "nota_virtual",
    "unique": 1
   },
@@ -46,7 +47,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-08 23:52:38.562202",
+ "modified": "2024-01-11 09:46:13.461564",
  "modified_by": "Administrator",
  "module": "code_marina",
  "name": "Notas",

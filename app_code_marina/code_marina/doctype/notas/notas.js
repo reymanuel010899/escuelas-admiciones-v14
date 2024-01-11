@@ -5,4 +5,8 @@ frappe.ui.form.on('Notas', {
 	// refresh: function(frm) {
 
 	// }
+	nota(frm) {
+		frm.set_value("nota_virtual", frm.doc.nota)
+		
+	}
 });

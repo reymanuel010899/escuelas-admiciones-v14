@@ -19,6 +19,7 @@
   {
    "fieldname": "semestre",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Semestre",
    "options": "Semestre Int"
   },
@@ -29,6 +30,7 @@
   {
    "fieldname": "carrera",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Carrera",
    "options": "Carreras"
   },
@@ -53,7 +55,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-09 00:24:27.074677",
+ "modified": "2024-01-11 00:26:43.957431",
  "modified_by": "Administrator",
  "module": "code_marina",
  "name": "Semestre",

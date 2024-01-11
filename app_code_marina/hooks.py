@@ -96,9 +96,12 @@ app_license = "MIT"
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
-# }
+permission_query_conditions = {
+ 	"Materias": "app_code_marina.controller.materia.get_permission_query_conditions",
+    "Estudiantes": "app_code_marina.controller.estudiante.get_permission_query_conditions",
+	"Notas": "app_code_marina.controller.nota.get_permission_query_conditions",
+	"Semestre": "app_code_marina.controller.semestres.get_permission_query_conditions"
+}
 #
 # has_permission = {
 # 	"Event": "frappe.desk.doctype.event.event.has_permission",
@@ -116,13 +119,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Employee": {
+		"after_insert": "app_code_marina.controller.employee.after_insert",
+	}
+ }
 
 # Scheduled Tasks
 # ---------------
