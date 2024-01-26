@@ -100,7 +100,6 @@ permission_query_conditions = {
  	"Materias": "app_code_marina.controller.materia.get_permission_query_conditions",
     "Estudiantes": "app_code_marina.controller.estudiante.get_permission_query_conditions",
 	"Notas": "app_code_marina.controller.nota.get_permission_query_conditions",
-	"Semestre": "app_code_marina.controller.semestres.get_permission_query_conditions"
 }
 #
 # has_permission = {

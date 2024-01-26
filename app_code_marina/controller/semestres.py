@@ -20,12 +20,6 @@ def get_permission_query_conditions(doc):
     for role in user.roles:
         roles_names.append(role.role)
     
-    if "Techers" in  roles_names:
-        materia = frappe.get_doc("Materias", {"profesor": prof.name})
-        return f"""`tabNotas`.materia = "{materia.name}" """
     
     if "Director" in roles_names:
         return ""
-
-
-   

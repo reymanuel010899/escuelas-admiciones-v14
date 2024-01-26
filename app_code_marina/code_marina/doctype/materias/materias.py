@@ -9,7 +9,6 @@ class Materias(Document):
         self.add_materia_semester()
         
 
-
     def add_materia_semester(self):
         semestre = frappe.get_doc('Semestre', {"name": self.semestre, "carrera": self.carrera })
         semestre.append('materia_item', {

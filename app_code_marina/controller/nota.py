@@ -8,7 +8,10 @@ def get_permission_query_conditions(doc):
         return ""
 
     try:
-        prof = frappe.get_doc("Employee", {"user_id": user.name}, ["name"])
+        if frappe.db.exists("Employee", {"user_id": user.name}):
+            prof = frappe.get_doc("Employee", {"user_id": user.name}, ["name"])
+        else:
+            prof = None
     except:
         return ""
 
@@ -20,9 +23,11 @@ def get_permission_query_conditions(doc):
     for role in user.roles:
         roles_names.append(role.role)
     
-    if "Techers" in  roles_names:
-        materia = frappe.get_doc("Materias", {"profesor": prof.name})
-        return f"""`tabNotas`.materia = "{materia.name}" """
+    if "Teachers" in  roles_names:
+        if frappe.db.exists("Materias", {"profesor": prof.name}):
+            materia = frappe.get_doc("Materias", {"profesor": prof.name})
+            if frappe.db.exists("Notas", {"materia": materia.name }):
+                return f"""`tabNotas`.materia = "{materia.name}" """
     
     if "Director" in roles_names:
         return ""
